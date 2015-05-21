@@ -9,10 +9,13 @@ class RSS extends \PHPUnit_Framework_TestCase
     $this->class = new Anax\RSS\RSS();
   }
 
-  public function test(){
+  public function testRSS(){
     $xml = "http://dbwebb.se/forum/feed.php";
     $xmlDoc = new \DOMDocument();
     $xmlDoc->load($xml);
+
+    $test1 = $this->class->setupAndGetTitle($xmlDoc);
+    $this->assertEquals('Databaser och Webbprogrammering', $test1);
 
     $this->class->setupAndGetTitle($xmlDoc);
     $this->class->getContent($xmlDoc);
