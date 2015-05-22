@@ -5,22 +5,24 @@ require_once(__DIR__ . '/../../src/RSS/RSS.php');
  */
 class RSSTester extends \PHPUnit_Framework_TestCase
 {
-  
-  public function connectToClass(){
+
+  public function testConnectToClass()
+  {
     $this->class = new \Anax\RSS\RSS();
   }
 
-  public function testRSS(){
-    $xml = "http://dbwebb.se/forum/feed.php";
+  public function testRSS()
+  {
+    /*$xml = 'http://dbwebb.se/forum/feed.php';
     $xmlDoc = new \DOMDocument();
-    $xmlDoc->load($xml);
+    $xmlDoc->load($xml);*/
 
     $test1 = $this->class->setupAndGetTitle($xmlDoc);
-    var_dump($test1);
-    $this->assertEquals('Databaser och Webbprogrammering', $test1);
+    $test2 = "Databaser och Webbprogrammering";
+    $this->assertEquals($test1, $test2);
 
-    $this->class->setupAndGetTitle($xmlDoc);
-    $this->class->getContent($xmlDoc);
+    //$this->class->setupAndGetTitle($xmlDoc);
+    //$this->class->getContent($xmlDoc);
   }
 
 }
