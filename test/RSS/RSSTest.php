@@ -13,13 +13,13 @@ class RSSTester extends \PHPUnit_Framework_TestCase
 
   public function testRSS()
   {
-    /*$xml = 'http://dbwebb.se/forum/feed.php';
+    $xml = "http://dbwebb.se/forum/feed.php";
     $xmlDoc = new \DOMDocument();
-    $xmlDoc->load($xml);*/
+    $xmlDoc->load($xml);
 
-    $test1 = $this->class->setupAndGetTitle($xmlDoc);
-    $test2 = "Databaser och Webbprogrammering";
-    $this->assertEquals($test1, $test2);
+    //$test1 = $this->class->setupAndGetTitle($xmlDoc);
+    //$test2 = "Databaser och Webbprogrammering";
+    $this->assertEquals("Databaser och Webbprogrammering", $this->class->setupAndGetTitle($xmlDoc));
 
     //$this->class->setupAndGetTitle($xmlDoc);
     //$this->class->getContent($xmlDoc);
