@@ -18,8 +18,7 @@ class RSSTester extends \PHPUnit_Framework_TestCase
     $this->assertEquals('Databaser och Webbprogrammering', $test1);
 
     $test2 = $this->class->getContent($xmlDoc);
-    $this->assertEquals(null ,$test2);
-
+    $this->assertNotEquals(null ,$test2);
   }
 
 }
