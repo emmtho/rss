@@ -1,3 +1,7 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/emmtho/rss/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/emmtho/rss/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/emmtho/rss/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/emmtho/rss/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/emmtho/rss/badges/build.png?b=master)](https://scrutinizer-ci.com/g/emmtho/rss/build-status/master)
+
 License
 -----------------------
 This software is free software and carries a MIT license.
